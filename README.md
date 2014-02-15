@@ -8,5 +8,5 @@
 
 ## Usage
 
-  - Add `[wip]` or `[WIP]` or `[Do Not Merge]` title to pull request
+  - Put `[wip]` or `[WIP]` or `[Do Not Merge]` on the title of the pull request
   - It works!
