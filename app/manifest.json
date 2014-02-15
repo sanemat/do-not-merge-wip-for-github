@@ -1,33 +1,33 @@
 {
-  "name": "__MSG_appName__",
-  "version": "0.0.6",
-  "manifest_version": 2,
-  "description": "__MSG_appDescription__",
-  "icons": {
-    "16": "images/icon-16.png",
-    "128": "images/icon-128.png"
-  },
-  "default_locale": "en",
-  "background": {
-    "scripts": [
-      "scripts/background.js"
+    "name": "__MSG_appName__",
+    "version": "0.0.7",
+    "manifest_version": 2,
+    "description": "__MSG_appDescription__",
+    "icons": {
+        "16": "images/icon-16.png",
+        "128": "images/icon-128.png"
+    },
+    "default_locale": "en",
+    "background": {
+        "scripts": [
+            "scripts/background.js"
+        ]
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://github.com/*/*/pull/*"
+            ],
+            "css": [
+                "styles/main.css"
+            ],
+            "js": [
+                "bower_components/jQuery/dist/jquery.min.js",
+                "scripts/contentscript.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": false
+        }
     ]
-  },
-  "options_page": "options.html",
-  "content_scripts": [
-    {
-      "matches": [
-        "https://github.com/*/*/pull/*"
-      ],
-      "css": [
-        "styles/main.css"
-      ],
-      "js": [
-        "bower_components/jQuery/dist/jquery.min.js",
-        "scripts/contentscript.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": false
-    }
-  ]
 }
