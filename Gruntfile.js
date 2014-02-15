@@ -218,9 +218,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             'images/{,*/}*.{webp,gif}',
-            '_locales/{,*/}*.json',
-            'bower_components/jQuery/dist/jquery.min.js',
-            'bower_components/jQuery/dist/jquery.min.map'
+            '_locales/{,*/}*.json'
           ]
         }, {
           expand: true,
