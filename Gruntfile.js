@@ -82,14 +82,6 @@ module.exports = function (grunt) {
         'test/spec/{,*/}*.js'
       ]
     },
-    mocha: {
-      all: {
-        options: {
-          run: true,
-          urls: ['http://localhost:<%= connect.options.port %>/index.html']
-        }
-      }
-    },
     coffee: {
       dist: {
         files: [{
@@ -279,7 +271,6 @@ module.exports = function (grunt) {
     'clean:server',
     'concurrent:test',
     'connect:test',
-    'mocha'
   ]);
 
   grunt.registerTask('build', [
