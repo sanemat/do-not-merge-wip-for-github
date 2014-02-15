@@ -1,33 +1,34 @@
 {
-    "name": "__MSG_appName__",
-    "version": "0.0.5",
-    "manifest_version": 2,
-    "description": "__MSG_appDescription__",
-    "icons": {
-        "16": "images/icon-16.png",
-        "128": "images/icon-128.png"
-    },
-    "default_locale": "en",
-    "background": {
-        "scripts": [
-            "scripts/background.js",
-            "bower_components/jQuery/dist/jquery.min.js"
-        ]
-    },
-    "options_page": "options.html",
-    "content_scripts": [
-        {
-            "matches": [
-                "https://github.com/*/*/pull/*"
-            ],
-            "css": [
-                "styles/main.css"
-            ],
-            "js": [
-                "scripts/contentscript.js"
-            ],
-            "run_at": "document_end",
-            "all_frames": false
-        }
+  "name": "__MSG_appName__",
+  "version": "0.0.5",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/background.js"
     ]
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*/*/pull/*"
+      ],
+      "css": [
+        "styles/main.css"
+      ],
+      "js": [
+        "bower_components/jQuery/dist/jquery.min.js",
+        "bower_components/jQuery/dist/jquery.min.map",
+        "scripts/contentscript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ]
 }

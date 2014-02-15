@@ -219,7 +219,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.{webp,gif}',
             '_locales/{,*/}*.json',
-            'bower_components/jQuery/dist/jquery.min.js'
+            'bower_components/jQuery/dist/jquery.min.js',
+            'bower_components/jQuery/dist/jquery.min.map'
           ]
         }, {
           expand: true,
