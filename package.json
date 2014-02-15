@@ -17,14 +17,14 @@
     "grunt-contrib-imagemin": "~0.2.0",
     "grunt-contrib-compress": "~0.4.7",
     "grunt-contrib-watch": "~0.5.2", 
+    "grunt-contrib-jasmine": "~0.4.2",
     "grunt-usemin": "~0.1.10", 
     "grunt-open": "~0.2.0",
     "grunt-svgmin": "~0.2.0",
     "grunt-concurrent": "~0.3.0",
     "load-grunt-tasks": "~0.1.0",
     "grunt-chrome-manifest": "~0.1.0",
-    "time-grunt": "~0.1.1",
-    "grunt-contrib-jasmine": "~0.6.1"
+    "time-grunt": "~0.1.1"
   },
   "engines": {
     "node": ">=0.8.0"

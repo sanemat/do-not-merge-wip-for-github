@@ -82,6 +82,13 @@ module.exports = function (grunt) {
         'test/spec/{,*/}*.js'
       ]
     },
+    jasmine: {
+      all: {
+        options: {
+          specs: 'test/spec/{,*/}*.js'
+        }
+      }
+    },
     coffee: {
       dist: {
         files: [{
@@ -271,6 +278,7 @@ module.exports = function (grunt) {
     'clean:server',
     'concurrent:test',
     'connect:test',
+    'jasmine'
   ]);
 
   grunt.registerTask('build', [
