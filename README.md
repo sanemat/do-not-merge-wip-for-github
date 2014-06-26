@@ -12,3 +12,17 @@
 
   - Put `[wip]` or `[WIP]` or `[Do Not Merge]` on the title of the pull request
   - It works!
+
+# Version Up
+
+```
+  $ grunt build
+  # Automatically bump version in app/manifest.json,
+  # and generate package/github-merge-caution.zip
+```
+
+- Access [developer dashboard](https://chrome.google.com/webstore/developer/dashboard)
+- Click app's "Edit"(編集)
+- Click Edit Item -> Upload Updated Package(更新パッケージをアップロード)
+- Click Publish Changes(変更を公開)
+- Done!
