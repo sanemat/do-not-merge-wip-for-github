@@ -26,3 +26,7 @@
 - Click Edit Item -> Upload Updated Package(更新パッケージをアップロード)
 - Click Publish Changes(変更を公開)
 - Done!
+
+```
+$ git push origin master
+```
