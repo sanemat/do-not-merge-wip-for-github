@@ -13,6 +13,8 @@
   - Put `[wip]` or `[WIP]` or `[Do Not Merge]` on the title of the pull request
   - It works!
 
+----
+
 ## Resource for Webstore
 
 ### Name
@@ -35,6 +37,7 @@ Usage:
 (empty)
 
 ### Screenshots
+![screenshot1](https://lh5.googleusercontent.com/e76vtjWYzwgwQcDr6FpLtpvgNLev6ZZkvRzk4GR3V6E9Cb5TQEWDHGat5DGWza5Cje04qWg155w=s400-h275-e365)
 
 ### Promotional tile image
 (empty)
