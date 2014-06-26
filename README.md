@@ -44,15 +44,17 @@ Usage:
 
 ## Version Up for Admin
 
+- Bump version in app/manifest.json __manually__
+
 ```
   $ grunt build
-  # Automatically bump version in app/manifest.json,
-  # and generate package/github-merge-caution.zip
+  # Generate package/github-merge-caution.zip
 ```
 
 - Access [developer dashboard](https://chrome.google.com/webstore/developer/dashboard)
 - Click app's "Edit"(編集)
 - Click Edit Item -> Upload Updated Package(更新パッケージをアップロード)
+- Upload generated zip file
 - Click Publish Changes(変更を公開)
 - Done!
 
