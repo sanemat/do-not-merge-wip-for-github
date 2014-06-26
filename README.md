@@ -13,7 +13,33 @@
   - Put `[wip]` or `[WIP]` or `[Do Not Merge]` on the title of the pull request
   - It works!
 
-## Version Up(for admin)
+## Resource for Webstore
+
+### Name
+github merge caution
+
+### Short name
+(empty)
+
+### Detailed description
+
+```
+You can't merge *WIP* pull request!
+
+Usage:
+- Put [wip] or [WIP] or [Do Not Merge] on the title of the pull request
+- It works!
+```
+
+### Icon
+(empty)
+
+### Screenshots
+
+### Promotional tile image
+(empty)
+
+## Version Up for Admin
 
 ```
   $ grunt build
