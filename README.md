@@ -1,6 +1,6 @@
-# Github Merge Caution
+# Do Not Merge WIP for GitHub
 
-  You can't merge *WIP* pull request!
+  You do not merge *WIP* pull request!
 
   [github merge caution](https://chrome.google.com/webstore/detail/github-merge-caution/nimelepbpejjlbmoobocpfnjhihnpked)
 
