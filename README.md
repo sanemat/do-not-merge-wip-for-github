@@ -18,7 +18,7 @@
 ## Resource for Webstore
 
 ### Name
-github merge caution
+Do Not Merge WIP for GitHub
 
 ### Short name
 (empty)
@@ -48,7 +48,7 @@ Usage:
 
 ```
   $ grunt build
-  # Generate package/github-merge-caution.zip
+  # Generate package/do-not-merge-wip-for-github.zip
 ```
 
 - Access [developer dashboard](https://chrome.google.com/webstore/developer/dashboard)

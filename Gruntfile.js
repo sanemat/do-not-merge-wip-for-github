@@ -262,7 +262,7 @@ module.exports = function (grunt) {
     compress: {
       dist: {
         options: {
-          archive: 'package/github merge caution.zip'
+          archive: 'package/do-not-merge-wip-for-github.zip'
         },
         files: [{
           expand: true,
