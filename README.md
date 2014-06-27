@@ -37,6 +37,8 @@ Usage:
 ![yo](https://raw.githubusercontent.com/sanemat/do-not-merge-wip-for-github/0810306d4936877293ec3f602b498f95e89cd683/app/images/icon-128.png)
 ![yo](https://raw.githubusercontent.com/sanemat/do-not-merge-wip-for-github/0810306d4936877293ec3f602b498f95e89cd683/app/images/icon-64.png)
 
+  I want icon :)
+
 ### Screenshots
 ![screenshot1](https://lh5.googleusercontent.com/e76vtjWYzwgwQcDr6FpLtpvgNLev6ZZkvRzk4GR3V6E9Cb5TQEWDHGat5DGWza5Cje04qWg155w=s400-h275-e365)
 
