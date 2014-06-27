@@ -35,7 +35,7 @@ Usage:
 
 ### Icon
 ![yo](https://raw.githubusercontent.com/sanemat/do-not-merge-wip-for-github/0810306d4936877293ec3f602b498f95e89cd683/app/images/icon-128.png)
-![yo](https://raw.githubusercontent.com/sanemat/do-not-merge-wip-for-github/0810306d4936877293ec3f602b498f95e89cd683/app/images/icon-64.png)
+![yo](https://raw.githubusercontent.com/sanemat/do-not-merge-wip-for-github/0810306d4936877293ec3f602b498f95e89cd683/app/images/icon-16.png)
 
   I want icon :)
 
