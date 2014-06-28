@@ -1,6 +1,7 @@
-## 1.0.1
+## 1.0.1 (2014-06-28)
 
-Features:
+BugFix:
+- Can Not Install the Extension (#11, #12, @dtaniwaki, @sanemat)
 
 ## 1.0.0 (2014-06-28)
 
