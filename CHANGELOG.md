@@ -1,4 +1,4 @@
-## 1.0.0
+## 1.0.0 (2014-06-28)
 
 Features:
 - Change extension name to "Do Not Merge WIP for GitHub" (#9, @sanemat)
