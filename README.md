@@ -2,7 +2,7 @@
 
   You do not merge *WIP* pull request!
 
-  [github merge caution](https://chrome.google.com/webstore/detail/github-merge-caution/nimelepbpejjlbmoobocpfnjhihnpked)
+  [Do Not Merge WIP for GitHub](https://chrome.google.com/webstore/detail/do-not-merge-wip-for-gith/nimelepbpejjlbmoobocpfnjhihnpked)
 
 ## Demo
 
