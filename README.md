@@ -1,5 +1,7 @@
 # Do Not Merge WIP for GitHub
 
+[![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+
   You do not merge *WIP* pull request!
 
   [Do Not Merge WIP for GitHub](https://chrome.google.com/webstore/detail/do-not-merge-wip-for-gith/nimelepbpejjlbmoobocpfnjhihnpked)
@@ -12,3 +14,8 @@
 
   - Put `[wip]` or `[WIP]` or `[Do Not Merge]` on the title of the pull request
   - It works!
+
+[travis-url]: https://travis-ci.org/sanemat/do-not-merge-wip-for-github
+[travis-image]: https://travis-ci.org/sanemat/do-not-merge-wip-for-github.svg?branch=master
+[daviddm-url]: https://david-dm.org/sanemat/do-not-merge-wip-for-github.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/sanemat/do-not-merge-wip-for-github
