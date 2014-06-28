@@ -19,9 +19,6 @@
             "matches": [
                 "https://github.com/*/*/pull/*"
             ],
-            "css": [
-                "styles/main.css"
-            ],
             "js": [
                 "bower_components/jQuery/dist/jquery.min.js",
                 "scripts/contentscript.js"
