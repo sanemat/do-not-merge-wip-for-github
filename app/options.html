@@ -1,12 +1,28 @@
 <!doctype html>
 <html>
     <head>
-        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/options.css" rel="stylesheet">
         <!-- build:js scripts/options.js -->
+        <script src="bower_components/jQuery/dist/jquery.min.js"></script>
         <script src="scripts/options.js"></script>
         <!-- endbuild -->
     </head>
     <body>
-        <!-- CHROME EXTENSION OPTION -->
+      <div class="container">
+        <div class="header">
+          <h1 class="title">Do Not Merge WIP for GitHub</h1>
+        </div>
+        <div class="content">
+          <form action="" class="options">
+            <div class="option">
+              <label for="protected_branch">Protected Branch <span class="weak">(Regular Expression)</span></label>
+              <input type="text" id="protected_branch" name="protected_branch" placeholder="e.g. deployment/*" />
+            </div>
+            <div class="buttons">
+              <button id="save_btn" class="button">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </body>
 </html>
