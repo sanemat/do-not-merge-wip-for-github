@@ -1,6 +1,7 @@
 ## 1.0.2
 
 Features:
+- Protect branches from deleting (#15, @dtaniwaki)
 
 ## 1.0.1 (2014-06-28)
 
