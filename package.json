@@ -23,7 +23,6 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-open": "~0.2.0",
     "grunt-svgmin": "^0.4.0",
-    "grunt-usemin": "^2.2.0",
     "load-grunt-tasks": "^0.6.0",
     "time-grunt": "^0.3.2"
   },

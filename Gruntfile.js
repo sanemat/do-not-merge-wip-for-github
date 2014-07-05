@@ -140,22 +140,6 @@ module.exports = function (grunt) {
     /*uglify: {
      dist: {}
      },*/
-    useminPrepare: {
-      options: {
-        dest: '<%= yeoman.dist %>'
-      },
-      html: [
-        '<%= yeoman.app %>/popup.html',
-        '<%= yeoman.app %>/options.html'
-      ]
-    },
-    usemin: {
-      options: {
-        dirs: ['<%= yeoman.dist %>']
-      },
-      html: ['<%= yeoman.dist %>/{,*/}*.html'],
-      css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
-    },
     imagemin: {
       dist: {
         files: [{
@@ -284,13 +268,11 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'chromeManifest:dist',
-    'useminPrepare',
     'concurrent:dist',
     'cssmin',
     'concat',
     'uglify',
     'copy',
-    'usemin',
     'compress'
   ]);
 
