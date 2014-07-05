@@ -129,12 +129,6 @@ module.exports = function (grunt) {
         }
       }
     },
-    // not enabled since usemin task does concat and uglify
-    // check index.html to edit your build targets
-    // enable this task if you prefer defining your build targets here
-    /*uglify: {
-     dist: {}
-     },*/
     imagemin: {
       dist: {
         files: [{
@@ -265,7 +259,6 @@ module.exports = function (grunt) {
     'chromeManifest:dist',
     'concurrent:dist',
     'cssmin',
-    'uglify',
     'copy',
     'compress'
   ]);
