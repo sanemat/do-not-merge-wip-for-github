@@ -23,7 +23,7 @@
                 "https://github.com/*/*/pull/*"
             ],
             "js": [
-                "bower_components/jQuery/dist/jquery.min.js",
+                "bower_components/jQuery/dist/jquery.js",
                 "scripts/contentscript.js"
             ],
             "run_at": "document_end",
