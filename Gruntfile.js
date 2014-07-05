@@ -156,6 +156,15 @@ module.exports = function (grunt) {
             '.tmp/styles/{,*/}*.css',
             '<%= yeoman.app %>/styles/{,*/}*.css',
             '!<%= yeoman.app %>/styles/{background,contentscript,options}.css'
+          ],
+          '<%= yeoman.dist %>/styles/background.css': [
+            '<%= yeoman.app %>/styles/background.css'
+          ],
+          '<%= yeoman.dist %>/styles/contentscript.css': [
+            '<%= yeoman.app %>/styles/contentscript.css'
+          ],
+          '<%= yeoman.dist %>/styles/options.css': [
+            '<%= yeoman.app %>/styles/options.css'
           ]
         }
       }
@@ -208,7 +217,6 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>',
           src: [
             'scripts/*.js',
-            'styles/{background,contentscript,options}.css',
             'bower_components/jQuery/dist/jquery.js'
           ]
         }]
