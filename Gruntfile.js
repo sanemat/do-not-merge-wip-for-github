@@ -209,7 +209,7 @@ module.exports = function (grunt) {
           src: [
             'scripts/*.js',
             'styles/{background,contentscript,options}.css',
-            'bower_components/jQuery/dist/jquery.min.js'
+            'bower_components/jQuery/dist/jquery.js'
           ]
         }]
       }
