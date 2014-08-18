@@ -1,3 +1,8 @@
+## 1.0.3 (2014-08-19)
+
+BugFix:
+- Catch up with GitHub's update(#19, #20, @sanemat)
+
 ## 1.0.2 (2014-07-05)
 
 Features:
