@@ -2,7 +2,12 @@
 
 [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
-  You do not merge *WIP* pull request!
+  Do not merge *WIP* pull request!
+
+Disables "Merge pull request" button while ANY of the following is true:
+* Title contains "[wip]" (case insensitive)
+* Any tasks remain incomplete
+* Any commit messages remain prefixed with "squash!" or "fixup!"
 
   [Do Not Merge WIP for GitHub](https://chrome.google.com/webstore/detail/do-not-merge-wip-for-gith/nimelepbpejjlbmoobocpfnjhihnpked)
 
