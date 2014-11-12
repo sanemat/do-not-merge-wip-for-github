@@ -20,7 +20,11 @@
       } else {
         var isWipTitle = /(\[wip\]|\[do\s*not\s*merge\])/i.test(issueTitle);
         var isWipTaksList = $container.find('.timeline-comment:first input[type="checkbox"]:not(:checked)').length > 0;
-        disabled = (isWipTitle || isWipTaksList);
+        var isSquashCommits = false;
+        $container.find('#commits_bucket .commit .commit-title').each(function(i, elem){
+          isSquashCommits = isSquashCommits || $(elem).text().match(/^\s*(squash|fixup)!\s/);
+        });
+        disabled = (isWipTitle || isWipTaksList || isSquashCommits);
         buttonHtml = '<span class="octicon octicon-git-merge"></span> ' + (disabled ? 'WIP! You can\'t merge!' : 'Merge pull request');
       }
 
