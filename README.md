@@ -4,7 +4,8 @@
 
   Do not merge *WIP* pull request!
 
-Disables "Merge pull request" button while ANY of the following is true:
+Disables "Merge pull request" button while ANY of the following is true
+
 * Title contains "[wip]" (case insensitive)
 * Any tasks remain incomplete
 * Any commit messages remain prefixed with "squash!" or "fixup!"
