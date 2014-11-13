@@ -263,6 +263,12 @@ module.exports = function (grunt) {
           dest: ''
         }]
       }
+    },
+    changelog: {
+      options: {
+        repository: 'https://github.com/sanemat/do-not-merge-wip-for-github',
+        version: require('./app/manifest.json').version
+      }
     }
   });
 
