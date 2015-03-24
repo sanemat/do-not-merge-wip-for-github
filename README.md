@@ -14,7 +14,7 @@ Disables "Merge pull request" button while ANY of the following is true:
 
 ## Demo
 
-![wip-you-cant-merge](https://f.cloud.github.com/assets/75448/2178447/c9dbe4ce-9667-11e3-9ac6-53c49cad72c7.gif)
+![wip-you-cant-merge](https://cloud.githubusercontent.com/assets/75448/6800619/7c0f14b2-d263-11e4-905b-ae098b27184b.gif)
 
 ## Usage
 
