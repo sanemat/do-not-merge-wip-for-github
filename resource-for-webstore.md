@@ -25,6 +25,10 @@ I want icon :)
 ### Screenshots
 ![screenshot1](https://lh5.googleusercontent.com/e76vtjWYzwgwQcDr6FpLtpvgNLev6ZZkvRzk4GR3V6E9Cb5TQEWDHGat5DGWza5Cje04qWg155w=s400-h275-e365)
 
+### Demo
+
+[![Do Not Merge WIP Demo](http://img.youtube.com/vi/89jY5OuXgwU/0.jpg)](https://www.youtube.com/watch?v=89jY5OuXgwU)
+
 ### Promotional tile image
 (empty)
 
