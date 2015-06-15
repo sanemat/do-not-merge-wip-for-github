@@ -18,7 +18,7 @@
         }
         buttonHtml = '<span class="octicon octicon-git-branch-delete"></span> ' + (disabled ? 'Protected branch' : 'Delete branch');
       } else {
-        var isWipTitle = /(\[wip\]|\[do\s*not\s*merge\])/i.test(issueTitle);
+        var isWipTitle = /(\[wip\]|\[do\s*not\s*merge\]\[dnm\])/i.test(issueTitle);
         var isWipTaksList = $container.find('.timeline-comment:first input[type="checkbox"]:not(:checked)').length > 0;
         var isSquashCommits = false;
         $container.find('#commits_bucket .commit .commit-title').each(function(i, elem){
