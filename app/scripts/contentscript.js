@@ -35,10 +35,12 @@
 
         disabled = (isWipTitle || isWipTaksList || isSquashCommits || isWipTag);
 
+        var buttonMessage = '';
+
         if (localStorage && localStorage.buttonMessage) {
-          var buttonMessage = localStorage.buttonMessage;
+          buttonMessage = localStorage.buttonMessage;
         } else {
-          var buttonMessage = 'WIP! You can\'t merge!';
+          buttonMessage = 'WIP! You can\'t merge!';
         }
 
         buttonHtml = '<span class="octicon octicon-git-merge"></span> ' + (disabled ? buttonMessage : 'Merge pull request');
