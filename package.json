@@ -28,6 +28,7 @@
   "engines": {
     "node": ">=0.8.0"
   },
+  "license": "MIT",
   "scripts": {
     "test": "grunt",
     "postinstall": "./node_modules/bower/bin/bower install"
