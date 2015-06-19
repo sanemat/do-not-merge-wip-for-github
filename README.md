@@ -18,7 +18,9 @@ Disables "Merge pull request" button while ANY of the following is true:
 
 ## Usage
 
-* Put `[wip]` or `[WIP]` or `[Do Not Merge]` on the title of the pull request
+* Put `[wip]` or `[WIP]` or `[Do Not Merge]` or `[DNM]` in the title of the pull request
+or
+* Add `wip`, `Do Not Merge` or `DNM` (Case insensitive) as a tag to your pull request
 * It works!
 
 ## Changelog
