@@ -34,20 +34,24 @@ I want icon :)
 
 ## Version Up for Admin
 
+### Check
+
+- `$ npm run build`
+- Load unpacked extension from dist/
+
+### Prepare
+
 - Bump version in app/manifest.json __manually__
+- `$ npm run changelog`
+- `$ git tag vx.y.z`
+- `$ git push origin vx.y.z`
 
-```
-$ grunt build
-# Generate package/do-not-merge-wip-for-github.zip
-```
+### Release
 
+- Download zip from [Latest Release](https://github.com/sanemat/do-not-merge-wip-for-github/releases/latest)
 - Access [developer dashboard](https://chrome.google.com/webstore/developer/dashboard)
 - Click app's "Edit"(編集)
 - Click Edit Item -> Upload Updated Package(更新パッケージをアップロード)
 - Upload generated zip file
 - Click Publish Changes(変更を公開)
 - Done!
-
-```
-$ git push origin master
-```
