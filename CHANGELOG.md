@@ -1,3 +1,11 @@
+<a name="1.0.5"></a>
+### 1.0.5 (2015-06-19)
+
+#### Features
+
+* **target:** Add ability to check tags for WIP/DNM ([6b5ee784](https://github.com/sanemat/do-not-merge-wip-for-github/commit/2d0508c0b22886904347a949a015a991f559dbcb), [#56](https://github.com/sanemat/do-not-merge-wip-for-github/pull/56))
+* **custom:** Add Ability for custom "Do not Merge" button message ([6b5ee784](https://github.com/sanemat/do-not-merge-wip-for-github/commit/2d0508c0b22886904347a949a015a991f559dbcb), [#56](https://github.com/sanemat/do-not-merge-wip-for-github/pull/56))
+
 <a name="1.0.4"></a>
 ### 1.0.4 (2014-11-13)
 
