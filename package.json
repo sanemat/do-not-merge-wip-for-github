@@ -1,6 +1,11 @@
 {
   "name": "do-not-merge-wip-for-github",
   "version": "0.0.0",
+  "author": {
+    "name": "sanemat",
+    "email": "ogataken@gmail.com",
+    "url": "http://sane.jp"
+  },
   "dependencies": {},
   "devDependencies": {
     "bower": "^1.3.5",
@@ -28,8 +33,9 @@
   "engines": {
     "node": ">=0.8.0"
   },
+  "license": "MIT",
   "scripts": {
-    "test": "grunt",
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "test": "grunt"
   }
 }
