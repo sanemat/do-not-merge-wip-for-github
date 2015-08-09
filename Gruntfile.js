@@ -1,8 +1,9 @@
 /*jshint camelcase: false*/
 // Generated on 2014-02-15 using generator-chrome-extension 0.2.5
 'use strict';
+var serveStatic = require('serve-static');
 var mountFolder = function (connect, dir) {
-  return connect.static(require('path').resolve(dir));
+  return serveStatic(require('path').resolve(dir));
 };
 
 // # Globbing
