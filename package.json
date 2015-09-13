@@ -10,7 +10,7 @@
   "devDependencies": {
     "bower": "^1.3.5",
     "grunt": "^0.4.5",
-    "grunt-chrome-manifest": "^0.2.1",
+    "grunt-chrome-manifest": "^0.3.0",
     "grunt-concurrent": "^2.0.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-coffee": "^0.13.0",
