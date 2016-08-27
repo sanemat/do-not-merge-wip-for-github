@@ -13,7 +13,7 @@ after_success:
 deploy:
   provider: releases
   api_key:
-    secure: "ElYRf446v/Yt+k6KIjSHhMA4WvVtS3AeM6lmZZyJ75AE+5L9HrVdA2Gdpw225wZlVRt9G0G7X5rfpOFVwWU3nOvR9hN1haCMdAmnxOtYIqqopk/A+/+ALJOuul0kXXw0fHDqNGL73xen5O0UkZeJz6DuUTwBbPCPV78zZrYOAAs="
+    secure: "koqvxEyuSx98G66ymV2UvV2PvH8/N8q+lpnBNUx/jFeIK3gfzst6hvw0d4Q49gJ/5zq3GFL5SOubW6ewfqvoS1FouXMoeRgR+jc1Au2BaxlYQ4KBBb+r1ZOW7a5ZbRmE/1kRBLKyaMmc9BrbSbPnaP+qAyg/OtmX9akGfPyXs6o="
   file:
   - "package/do-not-merge-wip-for-github.zip"
   on:
