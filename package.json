@@ -39,7 +39,7 @@
   "scripts": {
     "build": "grunt build",
     "changelog": "grunt changelog",
-    "postinstall": "./node_modules/bower/bin/bower install",
+    "postinstall": "bower install",
     "test": "grunt"
   }
 }
