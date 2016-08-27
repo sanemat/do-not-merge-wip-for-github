@@ -4,7 +4,7 @@
   var changeMergeButtonState = function() {
     var $container = $('#js-repo-pjax-container');
     var issueTitle = $container.find('.js-issue-title').text();
-    var $buttonMerge = $container.find('.merge-message button.js-merge-branch-action');
+    var $buttonMerge = $container.find('.merge-message button[data-details-container]');
     var disabled = false;
     var buttonHtml = '';
 
@@ -43,7 +43,10 @@
           buttonMessage = 'WIP! You can\'t merge!';
         }
 
-        buttonHtml = '<span class="octicon octicon-git-merge"></span> ' + (disabled ? buttonMessage : 'Merge pull request');
+        var $buttonIcon = $buttonMerge.find('.octicon');
+        var buttonIconHtml = $buttonIcon.length > 0 ? $buttonIcon.prop('outerHTML') + ' ' : '';
+
+        buttonHtml = buttonIconHtml + (disabled ? buttonMessage : 'Merge pull request');
       }
 
       $buttonMerge.attr('disabled', disabled);
