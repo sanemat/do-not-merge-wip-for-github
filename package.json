@@ -40,6 +40,7 @@
   "scripts": {
     "build": "grunt build",
     "changelog": "conventional-changelog -i CHANGELOG.md --same-file --preset angular --context .conventional-changelog.context.js",
+    "git:tag": "git tag v${npm_package_version}",
     "postinstall": "bower install",
     "test": "grunt"
   }
