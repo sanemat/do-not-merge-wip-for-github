@@ -1,3 +1,11 @@
+<a name="1.0.7"></a>
+## [1.0.7](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v1.0.6...v1.0.7) (2016-08-27)
+
+#### BugFix
+
+* Fix the merge button detection ([7890808](https://github.com/sanemat/do-not-merge-wip-for-github/commit/78908089eaddc0d753eeef110cbae1532b1b0a09), [#112](https://github.com/sanemat/do-not-merge-wip-for-github/pull/112), @ykzts)
+
+
 <a name"1.0.6"></a>
 ### 1.0.6 (2015-08-05)
 
