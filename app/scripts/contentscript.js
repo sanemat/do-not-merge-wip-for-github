@@ -18,7 +18,7 @@
         }
         buttonHtml = '<span class="octicon octicon-git-branch-delete"></span> ' + (disabled ? 'Protected branch' : 'Delete branch');
       } else {
-        var wipTitleRegex = /[\[(^](do\s*not\s*merge|wip|dnm)[\]):]/i;
+        var wipTitleRegex = /[\[(^](do\s*n[o']?t\s*merge|wip|dnm)[\]):]/i;
         var wipTagRegex = /(wip|do\s*not\s*merge|dnm)/i;
 
         var isWipTitle = wipTitleRegex.test(issueTitle);
