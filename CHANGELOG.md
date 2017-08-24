@@ -1,3 +1,10 @@
+<a name="1.0.8"></a>
+## [1.0.8](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v1.0.7...v1.0.8) (2017-08-24)
+
+* Add support for () and : ([5486c3e](https://github.com/sanemat/do-not-merge-wip-for-github/commit/5486c3ebd85f848d71f4593c1431d394cc797921))
+* Add support DONT and DON'T ([0ba90de](https://github.com/sanemat/do-not-merge-wip-for-github/commit/0ba90de6aa02c72f29a4cd95fb7442abb989d2d4))
+
+
 <a name="1.0.7"></a>
 ## [1.0.7](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v1.0.6...v1.0.7) (2016-08-27)
 
