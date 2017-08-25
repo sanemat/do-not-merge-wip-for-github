@@ -20,7 +20,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://github.com/*/*/pull/*"
+                "https://*/*/*/pull/*"
             ],
             "js": [
                 "bower_components/jQuery/dist/jquery.js",
