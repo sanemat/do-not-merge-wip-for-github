@@ -1,5 +1,5 @@
 const assert = require('assert');
-const pify = require('pify');
+const { promisify } = require('util');
 const fs = require('fs');
 const path = require('path');
 
@@ -12,16 +12,16 @@ let packageMeta;
 let manifest;
 
 Promise.resolve().then(() => {
-  return pify(fs.readFile)('package.json', 'utf-8');
+  return promisify(fs.readFile)('package.json', 'utf-8');
 }).then(data => {
   packageMeta = JSON.parse(data);
 }).then(() => {
-  return pify(fs.readFile)(path.join('webextension', 'manifest.json'), 'utf-8');
+  return promisify(fs.readFile)(path.join('webextension', 'manifest.json'), 'utf-8');
 }).then(data => {
   manifest = JSON.parse(data);
 }).then(() => {
   manifest.version = packageMeta.version;
-  return pify(fs.writeFile)(path.join(target, 'manifest.json'), JSON.stringify(manifest, null, 2));
+  return promisify(fs.writeFile)(path.join(target, 'manifest.json'), JSON.stringify(manifest, null, 2));
 }).catch(error => {
   console.error(error);// eslint-disable-line no-console
   process.exit(1);
