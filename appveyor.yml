@@ -1,0 +1,32 @@
+# http://www.appveyor.com/docs/appveyor-yml
+
+# init
+clone_depth: 20
+
+environment:
+  matrix:
+  - nodejs_version: 9
+
+# install
+install:
+- cmd: appveyor-retry powershell Install-Product node $env:nodejs_version
+- node --version
+- npm --version
+- appveyor-retry call npm install
+
+# build
+build: off
+
+# test
+test_script:
+- npm run verify
+
+# deploy
+deploy: off
+
+# notify
+notifications:
+- provider: Email
+  to:
+  - o.gata.ken@gmail.com
+  on_build_status_changed: true
