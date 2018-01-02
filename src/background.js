@@ -2,7 +2,7 @@ browser = require('webextension-polyfill'); // eslint-disable-line no-global-ass
 
 const handleMessage = (request, sender, sendResponse) => {
   if (request === 'settings') {
-    browser.storage.local.get().then(settings => {
+    browser.storage.local.get(['protectedBranch', 'buttonMessage']).then(settings => {
       sendResponse({ settings: settings });
     });
   }

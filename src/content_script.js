@@ -3,8 +3,9 @@ const changeMergeButtonState = () => {
     if (!response) {
       return;
     }
-    const settings = response.settings;
-    console.log(settings); // eslint-disable-line no-console
+    const { protectedBranch, buttonMessage } = response.settings;
+    console.log(protectedBranch); // eslint-disable-line no-console
+    console.log(buttonMessage); // eslint-disable-line no-console
   });
 };
 
