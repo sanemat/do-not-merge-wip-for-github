@@ -7,3 +7,4 @@ test/bower_components
 .DS_Store
 npm-debug.log
 dist-*
+package
