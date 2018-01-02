@@ -8,8 +8,8 @@ jobs:
       - run: npm install
       - run: npm run verify
   package:
-    machine:
-      enabled: true
+    docker:
+      - image: circleci/node:9.3.0
     steps:
       - checkout
       - run: npm install
