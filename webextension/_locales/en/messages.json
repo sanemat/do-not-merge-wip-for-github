@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Do Not Merge WIP for GitHub",
+    "description": "Application name"
+  },
+  "appDescription": {
+    "message": "You do not merge *WIP* pull request!",
+    "description": "Application description"
+  }
+}

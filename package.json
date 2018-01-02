@@ -10,10 +10,14 @@
   "dependencies": {},
   "devDependencies": {
     "conventional-changelog-cli": "^1.3.5",
+    "copy-concurrently": "^1.0.5",
     "eclint": "^2.5.0",
     "eslint": "^4.14.0",
     "fixpack": "^2.3.1",
     "globstar": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.2",
+    "web-ext": "^2.2.2",
     "webpack": "^3.10.0"
   },
   "engines": {
@@ -24,10 +28,15 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "changelog": "conventional-changelog -i CHANGELOG.md --same-file --preset angular",
+    "clear:dist": "rimraf dist",
+    "clear:package": "rimraf package",
     "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
     "eslint": "eslint . --ignore-path .gitignore",
     "fixpack": "fixpack",
     "lint": "npm run eclint && npm run eslint",
+    "manifest": "node bin/update-manifest.js dist",
+    "package": "web-ext build -s dist -a package -o",
+    "prepare": "node bin/prepare.js dist",
     "verify": "npm run lint"
   }
 }
