@@ -33,6 +33,7 @@
     "eslint": "eslint . --ignore-path .gitignore",
     "fixpack": "fixpack",
     "lint": "npm run eclint && npm run eslint",
+    "manifest": "node bin/update-manifest.js dist",
     "prepare": "node bin/prepare.js dist",
     "verify": "npm run lint"
   }
