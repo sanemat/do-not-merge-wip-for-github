@@ -1,0 +1,55 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:9.3.0
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run verify
+  package:
+    docker:
+      - image: circleci/node:9.3.0
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run clear:dist && npm run clear:package && npm run prepare && npm run build && npm run manifest
+      - run: npm run package
+      - persist_to_workspace:
+          root: .
+          paths:
+            - package/*
+  deploy:
+    docker:
+      - image: circleci/golang:1.9.2
+    steps:
+      - attach_workspace:
+          at: dist
+      - run:
+          name: prepare ghr
+          command: |
+            go get -u github.com/rhysd/go-github-selfupdate/cmd/go-get-release
+            go-get-release github.com/tcnksm/ghr
+      - run: ghr -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME $CIRCLE_TAG package/*
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            tags:
+              only: /.*/
+      - package:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /.*/
+      - deploy:
+          requires:
+            - package
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore: /.*/
