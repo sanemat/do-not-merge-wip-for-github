@@ -13,7 +13,7 @@
     "default_locale": "en",
     "background": {
         "scripts": [
-            "scripts/background.js"
+            "background.js"
         ]
     },
     "options_page": "options.html",
@@ -23,8 +23,7 @@
                 "https://github.com/*/*/pull/*"
             ],
             "js": [
-                "bower_components/jQuery/dist/jquery.js",
-                "scripts/contentscript.js"
+                "content_script.js"
             ],
             "run_at": "document_end",
             "all_frames": false
