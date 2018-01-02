@@ -33,6 +33,7 @@
     "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
     "eslint": "eslint . --ignore-path .gitignore",
     "fixpack": "fixpack",
+    "git:tag": "git tag -a v${npm_package_version} -m \"Release for ${npm_package_version}\"",
     "lint": "npm run eclint && npm run eslint",
     "manifest": "node bin/update-manifest.js dist",
     "package": "web-ext build -s dist -a package -o",
