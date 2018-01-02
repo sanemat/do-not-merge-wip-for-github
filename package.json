@@ -17,6 +17,7 @@
     "globstar": "^1.0.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2",
+    "web-ext": "^2.2.2",
     "webpack": "^3.10.0"
   },
   "engines": {
@@ -34,6 +35,7 @@
     "fixpack": "fixpack",
     "lint": "npm run eclint && npm run eslint",
     "manifest": "node bin/update-manifest.js dist",
+    "package": "web-ext build -s dist -a package -o",
     "prepare": "node bin/prepare.js dist",
     "verify": "npm run lint"
   }

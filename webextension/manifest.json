@@ -1,8 +1,8 @@
 {
-    "name": "Do Not Merge WIP for GitHub",
+    "name": "__MSG_appName__",
     "version": "0.0.0",
     "manifest_version": 2,
-    "description": "You do not merge *WIP* pull request!",
+    "description": "__MSG_appDescription__",
     "icons": {
         "16": "icon-16.png",
         "128": "icon-128.png"
