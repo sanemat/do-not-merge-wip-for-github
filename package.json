@@ -17,6 +17,7 @@
   "license": "MIT",
   "repository": "sanemat/do-not-merge-wip-for-github",
   "scripts": {
-    "changelog": "conventional-changelog -i CHANGELOG.md --same-file --preset angular"
+    "changelog": "conventional-changelog -i CHANGELOG.md --same-file --preset angular",
+    "verify": "exit 0"
   }
 }
