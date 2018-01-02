@@ -19,6 +19,7 @@
   "repository": "sanemat/do-not-merge-wip-for-github",
   "scripts": {
     "changelog": "conventional-changelog -i CHANGELOG.md --same-file --preset angular",
+    "fixpack": "fixpack",
     "verify": "exit 0"
   }
 }
