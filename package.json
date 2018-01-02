@@ -10,7 +10,10 @@
   "dependencies": {},
   "devDependencies": {
     "conventional-changelog-cli": "^1.3.5",
-    "fixpack": "^2.3.1"
+    "eclint": "^2.5.0",
+    "eslint": "^4.14.0",
+    "fixpack": "^2.3.1",
+    "globstar": "^1.0.0"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -19,7 +22,10 @@
   "repository": "sanemat/do-not-merge-wip-for-github",
   "scripts": {
     "changelog": "conventional-changelog -i CHANGELOG.md --same-file --preset angular",
+    "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
+    "eslint": "eslint . --ignore-path .gitignore",
     "fixpack": "fixpack",
-    "verify": "exit 0"
+    "lint": "npm run eclint && npm run eslint",
+    "verify": "npm run lint"
   }
 }
