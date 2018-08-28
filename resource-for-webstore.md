@@ -17,10 +17,8 @@ Usage:
 ```
 
 ### Icon
-![yo](https://raw.githubusercontent.com/sanemat/do-not-merge-wip-for-github/0810306d4936877293ec3f602b498f95e89cd683/app/images/icon-128.png)
-![yo](https://raw.githubusercontent.com/sanemat/do-not-merge-wip-for-github/0810306d4936877293ec3f602b498f95e89cd683/app/images/icon-16.png)
-
-I want icon :)
+![do-not-mix](https://raw.githubusercontent.com/sanemat/do-not-merge-wip-for-github/a7cbb8270599a41394d488f4aaffc1f3e58925fe/app/images/icon2-128.png)
+![do-not-mix](https://raw.githubusercontent.com/sanemat/do-not-merge-wip-for-github/a7cbb8270599a41394d488f4aaffc1f3e58925fe/app/images/icon2-16.png)
 
 ### Screenshots
 ![screenshot1](https://lh5.googleusercontent.com/e76vtjWYzwgwQcDr6FpLtpvgNLev6ZZkvRzk4GR3V6E9Cb5TQEWDHGat5DGWza5Cje04qWg155w=s400-h275-e365)
