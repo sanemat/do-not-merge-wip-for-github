@@ -4,8 +4,8 @@
     "manifest_version": 2,
     "description": "__MSG_appDescription__",
     "icons": {
-        "16": "images/icon-16.png",
-        "128": "images/icon-128.png"
+        "16": "images/icon2-16.png",
+        "128": "images/icon2-128.png"
     },
     "permissions": [
       "storage"
