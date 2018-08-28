@@ -1,3 +1,8 @@
+<a name="1.0.10"></a>
+## [1.0.10](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v1.0.9...v1.0.10) (2018-08-28)
+
+* Renew app icon ([974ec3d](https://github.com/sanemat/do-not-merge-wip-for-github/commit/974ec3df418631f68a1d2f443053b861367fbcc0))
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v1.0.8...v1.0.9) (2017-10-10)
 
