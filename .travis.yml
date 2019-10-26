@@ -1,7 +1,7 @@
 language: node_js
 sudo: false
 node_js:
-  - '6'
+  - 'node'
 before_install:
   - rvm install 2.6.5
   - gem install compass
