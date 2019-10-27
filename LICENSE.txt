@@ -1,4 +1,4 @@
-Copyright (c) 2014-2015 sanemat
+Copyright (c) 2014 sanemat
 
 MIT License
 

@@ -29,7 +29,7 @@ or
 
 ## License
 
-Copyright (c) 2014-2015 sanemat. Licensed under the MIT license.
+Copyright (c) 2014 sanemat. Licensed under the MIT license.
 
 ### App Icon
 
