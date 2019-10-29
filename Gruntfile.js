@@ -29,14 +29,6 @@ module.exports = function (grunt) {
     watch: {
       options: {
         spawn: false
-      },
-      coffee: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
-        tasks: ['coffee:dist']
-      },
-      coffeeTest: {
-        files: ['test/spec/{,*/}*.coffee'],
-        tasks: ['coffee:test']
       }
     },
     connect: {
@@ -84,26 +76,6 @@ module.exports = function (grunt) {
         options: {
           specs: 'test/spec/{,*/}*.js'
         }
-      }
-    },
-    coffee: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/scripts',
-          src: '{,*/}*.coffee',
-          dest: '.tmp/scripts',
-          ext: '.js'
-        }]
-      },
-      test: {
-        files: [{
-          expand: true,
-          cwd: 'test/spec',
-          src: '{,*/}*.coffee',
-          dest: '.tmp/spec',
-          ext: '.js'
-        }]
       }
     },
     imagemin: {
@@ -201,13 +173,10 @@ module.exports = function (grunt) {
     },
     concurrent: {
       server: [
-        'coffee:dist'
       ],
       test: [
-        'coffee'
       ],
       dist: [
-        'coffee',
         'imagemin',
         'svgmin',
         'htmlmin'
