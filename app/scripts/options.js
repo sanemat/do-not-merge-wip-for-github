@@ -1,16 +1,16 @@
-'use strict';
+(() => {
+  'use strict';
 
-(function($){
-  $(function(){
-    $('#protected_branch').val(localStorage.protectedBranch);
-    $('#button_message').val(localStorage.buttonMessage);
+  window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('protectedBranch').value = localStorage.protectedBranch;
+    document.getElementById('buttonMessage').value = localStorage.buttonMessage;
 
-    $('#save_btn').closest('form').submit(function(e) {
+    document.getElementById('save_btn').closest('form').addEventListener('submit', e => {
       e.preventDefault();
-      localStorage.protectedBranch = $('#protected_branch').val();
-      localStorage.buttonMessage = $('#button_message').val();
+      localStorage.protectedBranch = e.target.protectedBranch.value;
+      localStorage.buttonMessage = e.target.buttonMessage.value;
 
       window.alert('The options have been saved!');
     });
   });
-})(jQuery);
+})();
