@@ -21,7 +21,6 @@
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-htmlmin": "^0.6.0",
     "grunt-contrib-imagemin": "^1.0.0",
-    "grunt-contrib-jasmine": "^1.0.0",
     "grunt-contrib-jshint": "^0.12.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-open": "~0.2.0",
