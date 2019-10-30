@@ -1,6 +1,6 @@
 'use strict';
 
-(function($){
+(() => {
   window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("protected_branch").value = localStorage.protectedBranch;
     document.getElementById("button_message").value = localStorage.buttonMessage;
@@ -13,4 +13,4 @@
       window.alert('The options have been saved!');
     });
   });
-})(jQuery);
+})();
