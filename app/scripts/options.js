@@ -1,6 +1,6 @@
-'use strict';
-
 (() => {
+  'use strict';
+
   window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("protected_branch").value = localStorage.protectedBranch;
     document.getElementById("button_message").value = localStorage.buttonMessage;
