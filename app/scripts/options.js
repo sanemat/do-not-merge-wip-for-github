@@ -2,8 +2,8 @@
 
 (function($){
   $(function(){
-    $('#protected_branch').val(localStorage.protectedBranch);
-    $('#button_message').val(localStorage.buttonMessage);
+    document.getElementById("protected_branch").value = localStorage.protectedBranch;
+    document.getElementById("button_message").value = localStorage.buttonMessage;
 
     $('#save_btn').closest('form').submit(function(e) {
       e.preventDefault();
