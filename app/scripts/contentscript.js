@@ -3,7 +3,8 @@
 (function($){
   var changeMergeButtonState = function() {
     var $container = $('#js-repo-pjax-container');
-    var issueTitle = $container.find('.js-issue-title').text();
+    var container = document.querySelector('#js-repo-pjax-container');
+    var issueTitle = container.querySelector('.js-issue-title').textContent;
     var $buttonMerge = $container.find('.merge-message button[data-details-container]');
     var $buttonMergeOption = $container.find('.merge-message button[data-details-container] + .select-menu-button');
     var disabled = false;
