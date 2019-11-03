@@ -26,9 +26,9 @@
         var isWipTitle = wipTitleRegex.test(issueTitle);
         var isWipTaskList = $container.find('.timeline-comment:first input[type="checkbox"]:not(:checked)').length > 0;
         var isSquashCommits = false;
-        $container.find('#commits_bucket .commit .commit-title').each(function(i, elem){
-          isSquashCommits = isSquashCommits || $(elem).text().match(/^\s*(squash|fixup)!\s/);
-        });
+        for (const commitMessage of container.querySelectorAll('.commit-message')) {
+          isSquashCommits = isSquashCommits || commitMessage.textContent.match(/(squash|fixup)!/);
+        }
 
         var isWipTag = false;
         $container.find('#discussion_bucket .labels .label').each(function(i, elem) {
