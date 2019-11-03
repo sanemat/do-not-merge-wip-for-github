@@ -25,9 +25,9 @@
       }
 
       var isWipTag = false;
-      $container.find('#discussion_bucket .labels .label').each(function(i, elem) {
-        isWipTag = isWipTag || $(elem).text().match(wipTagRegex);
-      });
+      for (const label of container.querySelectorAll('.js-issue-labels .IssueLabel')) {
+        isWipTag = isWipTag || label.textContent.match(wipTagRegex);
+      }
 
       disabled = (isWipTitle || isWipTaskList || isSquashCommits || isWipTag);
 
