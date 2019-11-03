@@ -18,7 +18,7 @@
       var wipTagRegex = /(wip|do\s*not\s*merge|dnm)/i;
 
       var isWipTitle = wipTitleRegex.test(issueTitle);
-      var isWipTaskList = $container.find('.timeline-comment:first input[type="checkbox"]:not(:checked)').length > 0;
+      var isWipTaskList = container.querySelector('.timeline-comment') && container.querySelector('.timeline-comment').querySelector('input[type="checkbox"]:not(:checked)') !== null;
       var isSquashCommits = false;
       for (const commitMessage of container.querySelectorAll('.commit-message')) {
         isSquashCommits = isSquashCommits || commitMessage.textContent.match(/(squash|fixup)!/);
