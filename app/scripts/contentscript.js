@@ -2,7 +2,6 @@
   'use strict';
 
   var changeMergeButtonState = function() {
-    var $container = $('#js-repo-pjax-container');
     var container = document.querySelector('#js-repo-pjax-container');
     var issueTitle = container.querySelector('.js-issue-title').textContent;
     var buttonMerges = container.querySelectorAll('.merge-message button[data-details-container]');
