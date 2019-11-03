@@ -1,3 +1,19 @@
+# [2.0.0](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v1.0.10...v2.0.0) (2019-11-03)
+
+
+### Bug Fixes
+
+* **content:** detect issue label ([74921cc](https://github.com/sanemat/do-not-merge-wip-for-github/commit/74921cc3ec9e6a4f8baa911832cf41d93b5526d2))
+* **textcontent:** detect commit message ([f59c727](https://github.com/sanemat/do-not-merge-wip-for-github/commit/f59c7278dfe632a987b999308624754655109906)), closes [#204](https://github.com/sanemat/do-not-merge-wip-for-github/issues/204) [#236](https://github.com/sanemat/do-not-merge-wip-for-github/issues/236)
+
+
+### Features
+
+* **content:** drop branch protection ([ea8f3cd](https://github.com/sanemat/do-not-merge-wip-for-github/commit/ea8f3cd181e6a47819bbe1ba50135369c54852a1)), closes [#256](https://github.com/sanemat/do-not-merge-wip-for-github/issues/256)
+* **options:** drop branch protection ([25f289a](https://github.com/sanemat/do-not-merge-wip-for-github/commit/25f289a74855c7e09f76922264ee8e69f110f42a))
+
+
+
 <a name="1.0.10"></a>
 ## [1.0.10](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v1.0.9...v1.0.10) (2018-08-28)
 
