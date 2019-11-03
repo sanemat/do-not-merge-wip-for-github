@@ -25,7 +25,7 @@
         var wipTagRegex = /(wip|do\s*not\s*merge|dnm)/i;
 
         var isWipTitle = wipTitleRegex.test(issueTitle);
-        var isWipTaksList = $container.find('.timeline-comment:first input[type="checkbox"]:not(:checked)').length > 0;
+        var isWipTaskList = $container.find('.timeline-comment:first input[type="checkbox"]:not(:checked)').length > 0;
         var isSquashCommits = false;
         $container.find('#commits_bucket .commit .commit-title').each(function(i, elem){
           isSquashCommits = isSquashCommits || $(elem).text().match(/^\s*(squash|fixup)!\s/);
@@ -36,7 +36,7 @@
           isWipTag = isWipTag || $(elem).text().match(wipTagRegex);
         });
 
-        disabled = (isWipTitle || isWipTaksList || isSquashCommits || isWipTag);
+        disabled = (isWipTitle || isWipTaskList || isSquashCommits || isWipTag);
 
         var buttonMessage = '';
 
