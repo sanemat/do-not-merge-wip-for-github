@@ -1,4 +1,4 @@
-(function(){
+(() => {
   'use strict';
 
   function changeMergeButtonState() {
