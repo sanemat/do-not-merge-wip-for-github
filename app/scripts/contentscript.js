@@ -47,6 +47,15 @@
       for (const buttonMergeOption of buttonMergeOptions) {
         buttonMergeOption.disabled = disabled;
       }
+
+      // unset variables
+      container = null;
+      issueTitle = null;
+      buttonMerges = null;
+      buttonMergeOptions = null;
+      buttonHtml = null;
+      buttonMessage = null;
+
       setTimeout(changeMergeButtonState, 1000);
     });
   }
