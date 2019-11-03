@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  var changeMergeButtonState = function() {
+  function changeMergeButtonState() {
     var container = document.querySelector('#js-repo-pjax-container');
     var issueTitle = container.querySelector('.js-issue-title').textContent;
     var buttonMerges = container.querySelectorAll('.merge-message button[data-details-container]');
@@ -47,9 +47,9 @@
       for (const buttonMergeOption of buttonMergeOptions) {
         buttonMergeOption.disabled = disabled;
       }
+      setTimeout(changeMergeButtonState, 1000);
     });
-  };
+  }
 
   changeMergeButtonState();
-  setInterval(changeMergeButtonState, 1000);
 })();
