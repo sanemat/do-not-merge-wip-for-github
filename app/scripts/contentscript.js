@@ -5,7 +5,6 @@
     var $container = $('#js-repo-pjax-container');
     var container = document.querySelector('#js-repo-pjax-container');
     var issueTitle = container.querySelector('.js-issue-title').textContent;
-    var $buttonMerge = $container.find('.merge-message button[data-details-container]');
     var buttonMerges = container.querySelectorAll('.merge-message button[data-details-container]');
     var buttonMergeOptions = container.querySelectorAll('.merge-message button[data-details-container] + .select-menu-button');
     var disabled = false;
@@ -46,10 +45,7 @@
           buttonMessage = 'WIP! You can\'t merge!';
         }
 
-        var $buttonIcon = $buttonMerge.find('.octicon');
-        var buttonIconHtml = $buttonIcon.length > 0 ? $buttonIcon.prop('outerHTML') + ' ' : '';
-
-        buttonHtml = buttonIconHtml + (disabled ? buttonMessage : 'Merge pull request');
+        buttonHtml = disabled ? buttonMessage : 'Merge pull request';
       }
 
       for (const buttonMerge of buttonMerges) {
