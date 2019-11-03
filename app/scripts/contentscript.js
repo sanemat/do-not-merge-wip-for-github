@@ -1,6 +1,6 @@
-'use strict';
-
 (function($){
+  'use strict';
+
   var changeMergeButtonState = function() {
     var $container = $('#js-repo-pjax-container');
     var container = document.querySelector('#js-repo-pjax-container');
