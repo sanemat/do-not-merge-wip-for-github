@@ -6,6 +6,7 @@
     var container = document.querySelector('#js-repo-pjax-container');
     var issueTitle = container.querySelector('.js-issue-title').textContent;
     var $buttonMerge = $container.find('.merge-message button[data-details-container]');
+    var buttonMerges = container.querySelectorAll('.merge-message button[data-details-container]');
     var $buttonMergeOption = $container.find('.merge-message button[data-details-container] + .select-menu-button');
     var disabled = false;
     var buttonHtml = '';
@@ -51,9 +52,11 @@
         buttonHtml = buttonIconHtml + (disabled ? buttonMessage : 'Merge pull request');
       }
 
-      $buttonMerge.attr('disabled', disabled);
+      for (const buttonMerge of buttonMerges) {
+        buttonMerge.disabled = disabled;
+        buttonMerge.innerHTML = buttonHtml;
+      }
       $buttonMergeOption.attr('disabled', disabled);
-      $buttonMerge.html(buttonHtml);
     });
   };
 
