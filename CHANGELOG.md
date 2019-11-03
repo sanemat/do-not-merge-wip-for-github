@@ -1,3 +1,7 @@
+## [2.0.1](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v2.0.0...v2.0.1) (2019-11-03)
+
+
+
 # [2.0.0](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v1.0.10...v2.0.0) (2019-11-03)
 
 
