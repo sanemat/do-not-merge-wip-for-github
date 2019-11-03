@@ -12,7 +12,7 @@
     chrome.runtime.sendMessage({from: 'content', subject: 'localStorage'}, function(response){
       if (!response) { return; }
 
-      const localStorage = response.localStorage;
+      let localStorage = response.localStorage;
       const wipTitleRegex = /[\[(^](do\s*n[o']?t\s*merge|wip|dnm)[\]):]/i;
       const wipTagRegex = /(wip|do\s*not\s*merge|dnm)/i;
 
@@ -51,10 +51,14 @@
       // unset variables
       container = null;
       issueTitle = null;
+      disabled = null;
       buttonMerges = null;
       buttonMergeOptions = null;
       buttonHtml = null;
       buttonMessage = null;
+      localStorage = null;
+      isSquashCommits = null;
+      isWipTag = null;
 
       setTimeout(changeMergeButtonState, 1000);
     });
