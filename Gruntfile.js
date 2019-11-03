@@ -158,8 +158,7 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
           src: [
-            'scripts/*.js',
-            'bower_components/jQuery/dist/jquery.js'
+            'scripts/*.js'
           ]
         }]
       }
