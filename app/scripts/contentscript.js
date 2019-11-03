@@ -1,4 +1,4 @@
-(function($){
+(function(){
   'use strict';
 
   var changeMergeButtonState = function() {
@@ -52,4 +52,4 @@
 
   changeMergeButtonState();
   setInterval(changeMergeButtonState, 1000);
-})(jQuery);
+})();
