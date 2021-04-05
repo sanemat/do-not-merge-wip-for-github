@@ -11,7 +11,7 @@
     "conventional-changelog-cli": "^2.1.1",
     "grunt": "^1.3.0",
     "grunt-chrome-manifest": "^0.3.0",
-    "grunt-cli": "^1.4.1",
+    "grunt-cli": "^1.4.2",
     "grunt-concurrent": "^3.0.0",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-compress": "^2.0.0",
