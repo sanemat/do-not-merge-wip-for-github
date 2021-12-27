@@ -8,7 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "conventional-changelog-cli": "^2.1.1",
+    "conventional-changelog-cli": "^2.2.2",
     "grunt": "^1.4.1",
     "grunt-chrome-manifest": "^0.3.0",
     "grunt-cli": "^1.4.3",
