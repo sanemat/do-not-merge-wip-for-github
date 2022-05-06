@@ -13,7 +13,7 @@
     "grunt-chrome-manifest": "^0.3.0",
     "grunt-cli": "^1.4.3",
     "grunt-concurrent": "^3.0.0",
-    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-clean": "^2.0.1",
     "grunt-contrib-compress": "^2.0.0",
     "grunt-contrib-connect": "^3.0.0",
     "grunt-contrib-copy": "^1.0.0",
