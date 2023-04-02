@@ -1,3 +1,12 @@
+## [2.0.2](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v2.0.1...v2.0.2) (2023-04-02)
+
+
+### Bug Fixes
+
+* **permissions:** drop storage ([8bee3a1](https://github.com/sanemat/do-not-merge-wip-for-github/commit/8bee3a13e69e64a86bb425d1cfc402cf92edeaa6)), closes [#333](https://github.com/sanemat/do-not-merge-wip-for-github/issues/333)
+
+
+
 ## [2.0.1](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v2.0.0...v2.0.1) (2019-11-03)
 
 
