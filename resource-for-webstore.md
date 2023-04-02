@@ -48,8 +48,8 @@ Usage:
 
 - Download zip from [Latest Release](https://github.com/sanemat/do-not-merge-wip-for-github/releases/latest)
 - Access [developer dashboard](https://chrome.google.com/webstore/developer/dashboard)
-- Click app's "Edit"(編集)
-- Click Edit Item -> Upload Updated Package(更新パッケージをアップロード)
+- Click the item
+- Click Pakcage (on Build), then Upload new Package
 - Upload generated zip file
-- Click Publish Changes(変更を公開)
+- Click Store listing, then Submit for review
 - Done!
