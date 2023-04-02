@@ -39,9 +39,10 @@ Usage:
 
 ### Prepare
 
-- Bump version in app/manifest.json __manually__
+- Bump version on app/manifest.json, and package.json __manually__
+- `$ npm i`
 - `$ npm run changelog`
-- `$ git tag vx.y.z`
+- `$ npm run git:tag`
 - `$ git push origin vx.y.z`
 
 ### Release
