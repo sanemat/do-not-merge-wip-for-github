@@ -1,6 +1,6 @@
 # Do Not Merge WIP for GitHub
 
-[![Version][version-image]][version-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+[![Version][version-image]][version-url]
 
 Do not merge *WIP* pull request!
 
@@ -35,9 +35,5 @@ Copyright (c) 2014 sanemat. Licensed under the MIT license.
 
 CC BY-ND 3.0 [icons8](https://www.icons8.com)
 
-[travis-url]: https://travis-ci.org/sanemat/do-not-merge-wip-for-github
-[travis-image]: https://travis-ci.org/sanemat/do-not-merge-wip-for-github.svg?branch=master
-[daviddm-url]: https://david-dm.org/sanemat/do-not-merge-wip-for-github.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/sanemat/do-not-merge-wip-for-github
 [version-url]: https://chrome.google.com/webstore/detail/do-not-merge-wip-for-gith/nimelepbpejjlbmoobocpfnjhihnpked
 [version-image]: https://img.shields.io/chrome-web-store/v/nimelepbpejjlbmoobocpfnjhihnpked.svg
