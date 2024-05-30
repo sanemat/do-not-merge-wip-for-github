@@ -1,3 +1,7 @@
+## [2.0.4](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v2.0.3...v2.0.4) (2024-05-30)
+
+* Update dev dependencies
+
 ## [2.0.3](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v2.0.2...v2.0.3) (2023-04-02)
 
 
