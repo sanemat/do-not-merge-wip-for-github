@@ -7,7 +7,13 @@
         "16": "images/icon2-16.png",
         "128": "images/icon2-128.png"
     },
-    "permissions": [],
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://github.com/*/*/pull/*"
+    ],
     "default_locale": "en",
     "background": {
         "service_worker": "scripts/background.js"
