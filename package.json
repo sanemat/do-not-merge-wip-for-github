@@ -6,9 +6,8 @@
     "email": "ogataken@gmail.com",
     "url": "http://sane.jp"
   },
-  "dependencies": {},
   "devDependencies": {
-    "conventional-changelog-cli": "^4.1.0",
+    "conventional-changelog-cli": "^3.0.0",
     "grunt": "^1.6.1",
     "grunt-chrome-manifest": "^0.3.0",
     "grunt-cli": "^1.4.3",
