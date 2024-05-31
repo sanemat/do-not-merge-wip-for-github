@@ -3,7 +3,7 @@
 
   function changeMergeButtonState() {
     let container = document.querySelector('#js-repo-pjax-container');
-    let issueTitle = container.querySelector('.js-issue-title').textContent;
+    let issueTitle = container.querySelector('.js-issue-title')?.textContent;
     let buttonMerges = container.querySelectorAll('.merge-message button[data-details-container]');
     let buttonMergeOptions = container.querySelectorAll('.merge-message button[data-details-container] + .select-menu-button');
     let disabled = false;
@@ -17,7 +17,7 @@
       const wipTagRegex = /(wip|do\s*not\s*merge|dnm)/i;
 
       const isWipTitle = wipTitleRegex.test(issueTitle);
-      const isWipTaskList = container.querySelector('.timeline-comment') && container.querySelector('.timeline-comment').querySelector('input[type="checkbox"]:not(:checked)') !== null;
+      const isWipTaskList = container.querySelector('.timeline-comment') && container.querySelector('.timeline-comment')?.querySelector('input[type="checkbox"]:not(:checked)') !== null;
       let isSquashCommits = false;
       for (const commitMessage of container.querySelectorAll('.commit-message')) {
         isSquashCommits = isSquashCommits || commitMessage.textContent.match(/(squash|fixup)!/);
