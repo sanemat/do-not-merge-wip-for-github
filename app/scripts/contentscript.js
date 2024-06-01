@@ -1,3 +1,8 @@
+// Define browser for cross-browser compatibility
+if (typeof browser === 'undefined') {
+  browser = chrome;
+}
+
 (() => {
   'use strict';
 
