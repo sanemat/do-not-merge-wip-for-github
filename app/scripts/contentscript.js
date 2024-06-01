@@ -1,10 +1,8 @@
-// Define browser for cross-browser compatibility
-if (typeof browser === 'undefined') {
-  browser = chrome;
-}
-
 (() => {
   'use strict';
+
+  // Define browser for cross-browser compatibility
+  var browser = (typeof browser !== 'undefined') ? browser : chrome;
 
   function changeMergeButtonState() {
     let container = document.querySelector('#js-repo-pjax-container');

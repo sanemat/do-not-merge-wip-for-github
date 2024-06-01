@@ -1,9 +1,7 @@
 'use strict';
 
 // Define browser for cross-browser compatibility
-if (typeof browser === 'undefined') {
-  browser = chrome;
-}
+var browser = (typeof browser !== 'undefined') ? browser : chrome;
 
 browser.runtime.onInstalled.addListener(function (details) {
   console.log('previousVersion', details.previousVersion);
