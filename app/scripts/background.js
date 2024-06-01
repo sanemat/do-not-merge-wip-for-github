@@ -38,10 +38,10 @@ browser.runtime.onInstalled.addListener(function (details) {
   }
 });
 
-browser.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.subject === 'getStorage') {
-    browser.storage.local.get(null, function(items) {
-      sendResponse({storageData: items});
+    browser.storage.local.get(null, function (items) {
+      sendResponse({ storageData: items });
     });
     return true; // Keep the message channel open for sendResponse
   }

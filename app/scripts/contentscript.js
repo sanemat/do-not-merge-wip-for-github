@@ -12,7 +12,7 @@
     let disabled = false;
     let buttonHtml = '';
 
-    browser.runtime.sendMessage({from: 'content', subject: 'getStorage'}, function(response){
+    browser.runtime.sendMessage({ from: 'content', subject: 'getStorage' }, function (response) {
       if (!response) { return; }
 
       let storageData = response.storageData;
