@@ -5,13 +5,16 @@
   var browser = (typeof browser !== 'undefined') ? browser : chrome;
 
   window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('buttonMessage').value = localStorage.buttonMessage;
+    browser.storage.local.get('buttonMessage', function(result) {
+      document.getElementById('buttonMessage').value = result.buttonMessage || '';
+    });
 
     document.getElementById('save_btn').closest('form').addEventListener('submit', e => {
       e.preventDefault();
-      localStorage.buttonMessage = e.target.buttonMessage.value;
-
-      window.alert('The options have been saved!');
+      const buttonMessage = e.target.buttonMessage.value;
+      browser.storage.local.set({buttonMessage: buttonMessage}, function() {
+        window.alert('The options have been saved!');
+      });
     });
   });
 })();
