@@ -1,7 +1,7 @@
 {
   "node": true,
   "browser": true,
-  "esnext": true,
+  "esversion": 11,
   "bitwise": true,
   "camelcase": true,
   "curly": true,
