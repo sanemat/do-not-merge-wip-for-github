@@ -3,7 +3,7 @@
 // Define browser for cross-browser compatibility
 var browser = (typeof browser !== 'undefined') ? browser : chrome;
 
-function migrateLocalStorageToChromeStorage() {
+function migrateLocalStorageToBrowserStorage() {
   // Check if localStorage is not null and contains any keys
   if (!localStorage || Object.keys(localStorage).length === 0) {
     console.log('No localStorage data to migrate.');
@@ -34,7 +34,7 @@ browser.runtime.onInstalled.addListener(function (details) {
   } else if (details.reason === 'update') {
     console.log('previousVersion', details.previousVersion);
     // Handle update logic
-    migrateLocalStorageToChromeStorage();
+    migrateLocalStorageToBrowserStorage();
   }
 });
 
