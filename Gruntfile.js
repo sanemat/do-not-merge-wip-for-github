@@ -160,6 +160,13 @@ module.exports = function (grunt) {
           src: [
             'scripts/*.js'
           ]
+        }, {
+          cwd: 'node_modules/webextension-polyfill/dist/',
+          expand: true,
+          dest: '<%= yeoman.dist %>/scripts',
+          src: [
+            'browser-polyfill.min.js'
+          ]
         }]
       }
     },
