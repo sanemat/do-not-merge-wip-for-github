@@ -1,10 +1,10 @@
 (() => {
   'use strict';
 
-  // Define browser for cross-browser compatibility
-  var browser = (typeof browser !== 'undefined') ? browser : chrome;
-
   function changeMergeButtonState() {
+    // Define browser for cross-browser compatibility
+    var browser = (typeof browser !== 'undefined') ? browser : chrome;
+
     let container = document.querySelector('#js-repo-pjax-container');
     let issueTitle = container.querySelector('.js-issue-title')?.textContent;
     let buttonMerges = container.querySelectorAll('.merge-message button[data-details-container]');
@@ -62,6 +62,7 @@
       storageData = null;
       isSquashCommits = null;
       isWipTag = null;
+      browser = null;
 
       setTimeout(changeMergeButtonState, 1000);
     });
