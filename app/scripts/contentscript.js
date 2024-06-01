@@ -12,10 +12,10 @@
     let disabled = false;
     let buttonHtml = '';
 
-    chrome.runtime.sendMessage({from: 'content', subject: 'localStorage'}, function(response){
+    browser.runtime.sendMessage({from: 'content', subject: 'getStorage'}, function(response){
       if (!response) { return; }
 
-      let localStorage = response.localStorage;
+      let storageData = response.storageData;
       const wipTitleRegex = /[\[(^](do\s*n[o']?t\s*merge|wip|dnm)[\]):]/i;
       const wipTagRegex = /(wip|do\s*not\s*merge|dnm)/i;
 
@@ -35,8 +35,8 @@
 
       let buttonMessage = '';
 
-      if (localStorage && localStorage.buttonMessage) {
-        buttonMessage = localStorage.buttonMessage;
+      if (storageData && storageData.buttonMessage) {
+        buttonMessage = storageData.buttonMessage;
       } else {
         buttonMessage = 'WIP! You can\'t merge!';
       }
@@ -59,7 +59,7 @@
       buttonMergeOptions = null;
       buttonHtml = null;
       buttonMessage = null;
-      localStorage = null;
+      storageData = null;
       isSquashCommits = null;
       isWipTag = null;
 
