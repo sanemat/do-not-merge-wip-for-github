@@ -9,7 +9,6 @@
     },
     "permissions": [
         "storage",
-        "activeTab",
         "https://github.com/*/*/pull/*"
     ],
     "default_locale": "en",
