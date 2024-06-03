@@ -1,3 +1,12 @@
+## [3.0.1](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v3.0.0...v3.0.1) (2024-06-03)
+
+
+### Bug Fixes
+
+* **permission:** drop activetab ([3c2500e](https://github.com/sanemat/do-not-merge-wip-for-github/commit/3c2500edfe98a1aafb59017baaa39ec8949a9dc6)), closes [#364](https://github.com/sanemat/do-not-merge-wip-for-github/issues/364)
+
+
+
 # [3.0.0](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v2.0.4...v3.0.0) (2024-06-01)
 
 ### Features
