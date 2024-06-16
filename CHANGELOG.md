@@ -1,3 +1,31 @@
+## [3.0.1](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v3.0.0...v3.0.1) (2024-06-03)
+
+
+### Bug Fixes
+
+* **permission:** drop activetab ([3c2500e](https://github.com/sanemat/do-not-merge-wip-for-github/commit/3c2500edfe98a1aafb59017baaa39ec8949a9dc6)), closes [#364](https://github.com/sanemat/do-not-merge-wip-for-github/issues/364)
+
+
+
+# [3.0.0](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v2.0.4...v3.0.0) (2024-06-01)
+
+### Features
+
+Preparing for manifest v3, closes [#361](https://github.com/sanemat/do-not-merge-wip-for-github/issues/361)
+
+* Add migration script from localStorage to browser.storage (chrome.storage)
+* Set/Get value from browser.storage
+* Add storage permission
+* Add activeTab permission
+* Add `https://github.com/*/*/pull/*` permission
+* background persistent
+
+### Bug Fixes
+
+* **contentscript:** avoid null access ([92a6ed2](https://github.com/sanemat/do-not-merge-wip-for-github/commit/92a6ed2f509a4f46ab9a3c9d053a793e5861c44b)), closes [#335](https://github.com/sanemat/do-not-merge-wip-for-github/issues/335)
+
+
+
 ## [2.0.4](https://github.com/sanemat/do-not-merge-wip-for-github/compare/v2.0.3...v2.0.4) (2024-05-30)
 
 * Update dev dependencies
