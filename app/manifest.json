@@ -1,24 +1,26 @@
 {
     "name": "__MSG_appName__",
     "version": "3.0.1",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "__MSG_appDescription__",
     "icons": {
         "16": "images/icon2-16.png",
         "128": "images/icon2-128.png"
     },
     "permissions": [
-        "storage",
+        "storage"
+    ],
+    "host_permissions": [
         "https://github.com/*/*/pull/*"
     ],
     "default_locale": "en",
     "background": {
-        "scripts": [
-            "scripts/background.js"
-        ],
-        "persistent": true
+        "service_worker": "scripts/background.js"
     },
-    "options_page": "options.html",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
     "content_scripts": [
         {
             "matches": [
